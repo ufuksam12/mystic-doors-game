@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/level-1.css" rel="stylesheet">
+    <link href="styles/level-genel.css" rel="stylesheet">
+</head>
+
+<body class="waiting">
+    <div id="game-header">
+        <div class="score-icons">
+            <div class="envanter hidden" id="envanter-score">
+                <div class="envanter-icon-div">
+                    <img draggable="false" class="envanter-icon" src="images/score-icon.png">
+                </div>
+
+                <span class="envanter-value">0</span>
+            </div>
+            <div class="envanter hidden" id="envanter-kapi">
+                <div class="envanter-icon-div">
+                    <img draggable="false" class="envanter-icon" src="images/kapi-icon.png">
+                </div>
+
+                <span class="envanter-value">0</span>
+            </div>
+
+        </div>
+
+
+        <div class="envanter-icons">
+
+
+            <div class="envanter hidden" id="envanter-can">
+                <div class="envanter-icon-div">
+                    <img draggable="false" class="envanter-icon" src="images/can-icon.png">
+                </div>
+
+                <span class="envanter-value">0</span>
+            </div>
+            <div class="envanter hidden" id="envanter-anahtar">
+                <div class="envanter-icon-div">
+                    <img draggable="false" class="envanter-icon" src="images/anahtar-icon.png">
+                </div>
+                <span class="envanter-value">0</span>
+            </div>
+            <div class="envanter hidden" id="envanter-hit">
+                <div class="envanter-icon-div">
+                    <img draggable="false" class="envanter-icon" src="images/hit-icon.png">
+                </div>
+                <span class="envanter-value">0</span>
+                <button id="hit-kullan">Kullan</button>
+            </div>
+
+
+        </div>
+
+        <img draggable="false" id="game-logo" src="images/md-logo.png">
+    </div>
+    <div id="game">
+        <section class="level" id="level-start">
+            <button id="level-start-button" class="clickable">Başla</button>
+        </section>
+
+        <section class="level hide" id="level-finish">
+            Oyun Bitti
+            <div>
+                <button id="level-newgame-button" class="clickable">Yeniden Başla</button>
+            </div>
+        </section>
+
+        <section class="level hide" id="win-game">
+            
+            <div>
+                <button id="level-win-button" class="clickable">Yeniden Başla</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="game-description">
+        <p>Macera dolu bir yolculuğa hazır mısın?</p>
+    </div>
+
+    <img id="cursor" src="images/cursor-normal.png">
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/level-1.js"></script>
+    <script src="scripts/level-olusturucu.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
