@@ -228,7 +228,6 @@ img {
 
 #level-start {
     background-color: #00000090;
-    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,8 +267,7 @@ img {
 
 .waiting #level-start {
     opacity: 1;
-    pointer-events: all;
-    backdrop-filter: blur(20px);
+    pointer-events: all;    
 }
 
 #level-start-button {

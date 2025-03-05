@@ -117,9 +117,13 @@ function gameStart() {
     theme.currentTime = 0;
     theme.volume = 0.1;
     theme.loop = true;
-    uyariGoster("Sandıktaki ödülü bul ve kalenin içine bu gizli kapıdan gir.")
     document.getElementById("level-finish").classList.add("hide")
     levelDegistir("start", 1);
+    uyariGoster("Başlıyoruz...")
+
+    setTimeout(()=>{
+        uyariGoster("Şimdi kaleden çıkış yolunun bulma vakti!")
+    }, 2000)
 }
 
 

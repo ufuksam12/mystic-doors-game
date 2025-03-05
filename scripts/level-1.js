@@ -11,6 +11,7 @@ function level1KapiClick() {
     if (!kapi.classList.contains("kilit-acik") && envanter.anahtar) {
 
         envanterUpdate("anahtar", -1);
+        uyariGoster("Zindan kilidi açıldı! Şimdi kaleden çıkış yolunu bulmaya başla.")
 
         kapi.src = "images/kapi-kapali.png";
 
@@ -26,13 +27,13 @@ function level1KapiClick() {
         kapiAcilmaAnimasyonu(kapi, () => {
             //alert("Slogan! Sonraki levela geçtin.")
             envanterUpdate("hit", 1);
+            uyariGoster("Tebrikler. İlk ödülü buldun!")
             setTimeout(() => {
                 envanterUpdate("score", 100);
             }, 1500);
             setTimeout(() => {
                 envanterUpdate("kapi", 1);
-                levelDegistir(1, 2);
-                uyariGoster("Bu üç kapıdan birini seç!")
+                levelDegistir(1, 2);                
             }, 3000)
         });
     }
@@ -57,6 +58,9 @@ function level1SandikClick() {
 
     setTimeout(() => {
         envanterUpdate("can", 3, "3");
+
+        uyariGoster("Seni tehlikeden kurtaracak 3 can buldun.")
+
         openBox.play();
         openBox.currentTime = 0;
     }, 3000)

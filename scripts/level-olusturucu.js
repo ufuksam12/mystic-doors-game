@@ -31,10 +31,16 @@ function levelInit(levelNumber, kapiSayisi = 3) {
     }
 
     let kapiAcildi = false;
-    const doors =
-        kapiSayisi === 3 ?
-            ["1", "2", "3"].sort(() => (Math.random() - 0.5))
-            : ["1", "2", "3", "4", "5"].sort(() => (Math.random() - 0.5));
+    let doors =
+        kapiSayisi === 3 ? ["1", "2", "3"] : ["1", "2", "3", "4", "5"];
+
+    doors = doors.sort(() => (Math.random() - 0.5))
+        .sort(() => (Math.random() - 0.5))
+        .sort(() => (Math.random() - 0.5))
+        .sort(() => (Math.random() - 0.5));
+        
+
+    console.log(doors);
 
     let kapisesiTimer = null;
     const odulSesiVersin = Math.random() > 0.5;
@@ -111,7 +117,7 @@ function levelInit(levelNumber, kapiSayisi = 3) {
 
                 kapiAcilmaAnimasyonu(kapi, () => {
                     if (envanter.can === 0) {
-                        gameOver(levelNumber);                        
+                        gameOver(levelNumber);
                         return;//; alert("Can hakkın bitti geçilecek kapı kalmadı!")
                     }
 
