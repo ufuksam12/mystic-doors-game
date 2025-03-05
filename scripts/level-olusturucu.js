@@ -39,9 +39,6 @@ function levelInit(levelNumber, kapiSayisi = 3) {
         .sort(() => (Math.random() - 0.5))
         .sort(() => (Math.random() - 0.5));
         
-
-    console.log(doors);
-
     let kapisesiTimer = null;
     const odulSesiVersin = Math.random() > 0.5;
 
