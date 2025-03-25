@@ -309,3 +309,30 @@ body.waiting #hit-kullan,
 body.game-end #hit-kullan {
     display: none;
 }
+
+@media only screen and (max-width: 700px) {
+
+    #game-logo {
+        height: 60px;
+    }
+
+    .waiting #game-logo {
+        height: 80px;
+    }
+
+    #game {
+        zoom: 0.6;
+    }
+
+
+    #game:hover section {
+        transform: scale(1.0);
+    }
+    
+    #game:hover #level-1 {
+        transform: scale(1.0);
+    }
+    
+
+
+}
